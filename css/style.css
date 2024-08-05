@@ -1,0 +1,328 @@
+:root{
+  --maim-color:rgb(0, 120, 255);
+}
+body{
+  color: #4e4e4e;
+}
+ul{list-style: none;}
+.main-color{
+  color: var(--maim-color);
+}
+.bg-main-color{
+  background-color: var(--maim-color);
+}
+.bg-img{
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+#home::before,
+.information::before,
+.slide-2::before,
+#contact::before{
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+.shadow-bg{
+  box-shadow: 0 0 0 10px var(--maim-color);
+}
+.shadow-bg-ligth{
+  box-shadow: 0 0 0 10px rgb(255, 255, 255 , 70%);
+}
+.title-1{
+  font-size: 3rem;
+}
+.title-2{
+  font-size: 2rem;
+}
+.title-1 + p::before{
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: var(--maim-color);
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  transform: translateX(-50%);
+}
+.title-2::before{
+  content: "";
+  width: 100px;
+  height: 3px;
+  background-color: var(--maim-color);
+  position: absolute;
+  bottom: -7px;
+}
+#home::before{
+  background: rgba(0, 0, 0, 0.5);
+}
+.navbar-nav>li>a:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  width: 0;
+  background-color: #fff;
+  transition: all 0.3s;
+}
+.navbar-nav a:hover::before{
+  width: 80%;
+}
+.navbar .dropdown:hover>ul {
+  opacity: 1;
+  top: 100%;
+  display: block;
+}
+.navbar .dropdown ul {
+  width: 200px;
+  display: none;
+  left: 30px;
+  top: 100%;
+  z-index: 99;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: all 0.3s;
+  visibility: hidden;
+}
+@media (min-width:990px){
+  .navbar .dropdown ul{
+    visibility: visible;
+  }
+}
+.navbar .dropdown .dropdown-2:hover ul{
+  width: 200px;
+  display: block;
+  left: 100%;
+  top: 60px;
+  z-index: 99;
+  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
+  transition: all 0.3s;
+}
+.navbar-bg{
+  background-color:rgba(0, 0, 0, 0.9);
+}
+.navbar ul >li {
+  padding: 10px 0 10px 30px;
+}
+section#home {
+  background-image: url(../image/hero-bg.jpg);
+}
+#home .layout::before{
+  background: rgba(0, 0, 0, 0.5);
+}
+section#home .text h1{
+  font-size: 3rem;
+}
+section#home .text p::before{
+  content: "|";
+  animation-name: type-text;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  font-size: 2rem;
+  font-weight: 600;
+}
+@keyframes type-text {
+  0%{content: "D|"}
+  1%{content: "De|"}
+  2%{content: "Dev|"}
+  3%{content: "Deve|"}
+  4%{content: "Devel|"}
+  5%{content: "Develo|"}
+  6%{content: "Develop|"}
+  7%{content: "Develope|"}
+  8%{content: "Developer|"}
+  12%{content: "Developer|";}
+  13%{content: "Develope|";}
+  14%{content: "Develop|"}
+  15%{content: "Develo|"}
+  16%{content: "Devel|"}
+  17%{content: "Deve|"}
+  18%{content: "Dev|"}
+  19%{content: "De|"}
+  20%{content: "D|"}
+  21%{content: "|";}
+  22%{content: "F|"}
+  23%{content: "Fr|"}
+  24%{content: "Fre|"}
+  25%{content: "Free|"}
+  26%{content: "Freel|"}
+  27%{content: "Freela|"}
+  28%{content: "Freelan|"}
+  29%{content: "Freelanc|"}
+  30%{content: "Freelance|"}
+  31%{content: "Freelancer|"}
+  35%{content: "Freelancer|"}
+  36%{content: "Freelance|"}
+  37%{content: "Freelanc|"}
+  38%{content: "Freelan|"}
+  39%{content: "Freela|"}
+  40%{content: "Freel|"}
+  41%{content: "Free|"}
+  42%{content: "Fre|"}
+  43%{content: "Fr|"}
+  44%{content: "F|"}
+  45%{content: "|"}
+  46%{content: "p|"}
+  47%{content: "Ph|"}
+  48%{content: "Pho|"}
+  49%{content: "Phot|"}
+  50%{content: "Photo|"}
+  51%{content: "Photog|"}
+  52%{content: "Photogr|"}
+  53%{content: "Photogra|"}
+  54%{content: "Photograp|"}
+  55%{content: "Photograph|"}
+  56%{content: "Photographe|"}
+  57%{content: "Photographer|"}
+  58%{content: "Photographer|"}
+  62%{content: "Photographe|"}
+  63%{content: "Photograph|"}
+  64%{content: "Photograp|"}
+  65%{content: "Photogra|"}
+  66%{content: "Photogr|"}
+  67%{content: "Photog|"}
+  68%{content: "Photo|"}
+  69%{content: "Phot|"}
+  70%{content: "Pho|"}
+  71%{content: "Ph|"}
+  72%{content: "p|"}
+  73%{content: "|"}
+  74%{content: "D|"}
+  75%{content: "De|"}
+  76%{content: "Des|"}
+  77%{content: "Desi|"}
+  78%{content: "Desig|"}
+  79%{content: "Design|"}
+  80%{content: "Designe|"}
+  81%{content: "Designer|"}
+  85%{content: "Designer|"}
+  86%{content: "Designe|"}
+  87%{content: "Desig|"}
+  88%{content: "Desig|"}
+  89%{content: "Desi|"}
+  90%{content: "Des|"}
+  91%{content: "De|"}
+  92%{content: "D|"}
+  93%{content: "|"}
+  100%{content: "|"}
+}
+.progress-section .progress{
+  height: 0.7rem;
+  background-color: rgb(0, 120, 255 ,20%) ;
+}
+.progress-section .progress .progress-bar {
+  height: 0.7rem;
+  background-color: var(--maim-color);
+}
+#services .card .card-body i{
+  transition: all 0.5s;
+}
+#services .card .card-body:hover i{
+  box-shadow: 0 0 0 10px rgb(0, 120, 255 ,20%) ;
+  background: var(--maim-color);
+}
+#services .card-body i::before{
+  transition: all 0.5s;
+}
+#services .card:hover .card-body i::before{
+  color: white;
+}
+.information{
+  background-image: url(../image/counters-bg.jpg);
+}
+.information::before,
+.slide-2::before,
+#contact::before{
+  background-color: rgb(0, 120, 255 ,70%) ;
+}
+.information .conatnt {
+  color: #fff;
+}
+.information,
+.slide, 
+#contact{
+  padding: 8rem 0;
+}
+#work .card-body .text span{
+  font-size: 0.8rem;
+}
+#work .card img{
+  transition: all 1s;
+}
+#work .card:hover img{
+  transform: scale(1.3);
+}
+#work .card i{
+  padding: 5px;
+  box-shadow: 0 0 0 3px var(--maim-color);
+}
+.slide-2,
+#contact{
+  background-image: url(../image/overlay-bg.jpg);
+}
+.slide .carousel-indicators button {
+  width: 10px;
+  height: 10px;
+}
+.footer__img img{
+  width: 30px;
+}
+form button{
+  transition: all 0.5s;
+}
+form button:hover{
+  opacity: 80%;
+  box-shadow: 0 0 0 4px rgba(0, 120, 255 ,20%) ;
+}
+.social li{
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 0 0 4px rgb(0, 120, 255) ;
+  transition: all 0.5s;
+}
+.social li:hover{
+  background-color: var(--maim-color);
+  box-shadow: 0 0 0 4px rgba(0, 120, 255, 20%) ;
+}
+.social li i::before{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.social li:hover i::before{
+  color: white;
+}
+footer{
+  background: #0062d3;;
+}
+
+
+@media (min-width: 768px) {
+  section#home .text h1{
+      font-size: 4.5rem;
+  }
+  section#home .text p::before{
+    font-size: 2.5rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
